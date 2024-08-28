@@ -28,7 +28,7 @@
                 <nz-form-item *ngSwitchCase="0">
                   <h2 nz-typography>Name your organization.</h2>
                   <span nz-typography class="label-description">
-                    Pick a name for your Worklenz account.
+                    Pick a name for your account.
                   </span>
                   <nz-form-control [nzSpan]="null">
                     <input [formControlName]="'team_name'" nz-input [placeholder]="teamSetupPlaceholder" type="text"
@@ -44,19 +44,19 @@
                     What project are you working on right now?
                   </span>
                   <nz-form-control [nzSpan]="null">
-                    <input [formControlName]="'project_name'" nz-input [placeholder]="'e.g. Worklenz marketing plan'"
+                    <input [formControlName]="'project_name'" nz-input [placeholder]="'e.g. Organization marketing plan'"
                            [id]="projectNameId"
                            type="text" tabindex="0"/>
                   </nz-form-control>
 
-                  <div class="position-relative">
+                  <!-- <div class="position-relative">
                     <h4 nz-typography class="text-center mt-2 vert-text">or</h4>
                     <div class="vert-line"></div>
                   </div>
 
                   <button [nzType]="'primary'" nz-button (click)="openTemplateSelector()"
                           class="ms-auto me-auto">Import from templates
-                  </button>
+                  </button> -->
 
                 </nz-form-item>
                 <!-- end of project name step -->

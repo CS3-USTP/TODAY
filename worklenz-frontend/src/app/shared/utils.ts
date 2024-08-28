@@ -58,7 +58,7 @@ export const getBase64 = (file: File): Promise<string | ArrayBuffer | null> =>
   });
 
 export function log_error(error: any) {
-  console.error("Worklenz Error: ", error);
+  console.error("Application Error: ", error);
 }
 
 export function isValidateEmail(email: string) {

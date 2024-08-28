@@ -31,12 +31,12 @@ export class LicensingAlertsComponent {
 
     if (this.profile.subscription_status === 'trialing') {
       if (daysDifference < 0) {
-        this.string1 = `Your Worklenz trial expired`;
+        this.string1 = `Your trial expired`;
         this.string2 = this.string2 + ' ago';
       } else if (daysDifference !== 0 && daysDifference < 7) {
-        this.string1 = `Your Worklenz trial expires in`;
+        this.string1 = `Your trial expires in`;
       } else if (daysDifference === 0 && daysDifference < 7) {
-        this.string1 = `Your Worklenz trial expires `;
+        this.string1 = `Your trial expires `;
         this.string2 = 'today';
       }
       return true;
@@ -44,12 +44,12 @@ export class LicensingAlertsComponent {
 
     if (this.profile.subscription_status === 'active') {
       if (daysDifference < 0) {
-        this.string1 = `Your Worklenz subscription expired`;
+        this.string1 = `Your subscription expired`;
         this.string2 = this.string2 + ' ago';
       } else if (daysDifference !== 0 && daysDifference < 7) {
-        this.string1 = `Your Worklenz subscription expires in`;
+        this.string1 = `Your subscription expires in`;
       } else if (daysDifference === 0 && daysDifference < 7) {
-        this.string1 = `Your Worklenz subscription expires `;
+        this.string1 = `Your subscription expires `;
         this.string2 = 'today';
       }
       return true;
