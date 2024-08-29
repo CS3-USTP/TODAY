@@ -28,7 +28,7 @@ export class TaskDescriptionComponent implements OnInit, OnDestroy {
   show = false;
   loading = false;
 
-  readonly apiKey = "4nquevykvy1i0q0v62ksxuu3nz1muy8i5fsqpj3wp9qm2mgp";
+  readonly apiKey = "p84g6m2gw8ts0mrfv0xw9l4mj3i26hsm81x1239r3iz5893f";
   readonly CONFIG = {
     plugins: "lists link code wordcount",
     toolbar: 'blocks bold italic underline strikethrough | checklist numlist bullist link | alignleft aligncenter alignright alignjustify',
