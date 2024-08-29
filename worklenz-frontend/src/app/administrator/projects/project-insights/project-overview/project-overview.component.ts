@@ -127,9 +127,9 @@ export class ProjectOverviewComponent implements OnInit {
         const pdfWidth = doc.internal.pageSize.getWidth() - 2 * bufferX;
         const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
 
-        let LogoImg = new Image();
-        LogoImg.src = location.origin + '/assets/images/logo.png';
-        doc.addImage(LogoImg, 'PNG', (doc.internal.pageSize.getWidth() / 2) - 12, 5, 30, 6.5);
+        // let LogoImg = new Image();
+        // LogoImg.src = location.origin + '/assets/images/logo.png';
+        // doc.addImage(LogoImg, 'PNG', (doc.internal.pageSize.getWidth() / 2) - 12, 5, 30, 6.5);
         doc.setFontSize(14);
         doc.setTextColor(0, 0, 0, 0.85);
         doc.text([`Insights - ` + projectName + ` - Overview`, `${formatDate(new Date(), 'yyyy-MM-dd', 'en')}`], 105, 17, {
