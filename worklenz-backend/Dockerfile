@@ -11,6 +11,7 @@ RUN npm install -g ts-node typescript grunt grunt-cli
 COPY package*.json ./
 
 # Install app dependencies
+RUN npm install
 RUN npm ci
 
 # Copy the rest of the application code
